@@ -69,7 +69,7 @@ export default function Page() {
               <h3>Nuestro Cuidado</h3>
               <div>
                 AoSame Salud entra cuidado holistico de pies a cabeza,
-                incluyendo cudados de enferemedades crónicas, tratamientos
+                incluyendo cudados de enfermedades crónicas, tratamientos
                 estéticos como ... y tratamientos especialistas como ...
               </div>
             </div>
