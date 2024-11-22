@@ -2,7 +2,7 @@
   "name": "mantine-minimal-next-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jcobaise.github.io/appointments",
+  "homepage": "https://aosamesalud.cl",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
