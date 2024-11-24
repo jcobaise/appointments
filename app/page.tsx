@@ -11,6 +11,7 @@ import {
   Stack,
 } from "@mantine/core";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Page() {
   const groceries = [
@@ -31,6 +32,10 @@ export default function Page() {
     },
   ];
 
+  useEffect(() => {
+    document.title = "Ao Same Salud";
+  }, []);
+
   const items = groceries.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control icon={undefined}>{item.value}</Accordion.Control>
@@ -40,10 +45,10 @@ export default function Page() {
 
   return (
     <Stack gap={"xl"}>
-      <Card>
+      <Card style={{ backgroundColor: "#649cb4"}}>
         <Group wrap="nowrap" gap={"xs"} justify="end">
-          <Card maw={400}>
-            <div style={{ textAlign: "right", fontSize: 20 }}>
+          <Card maw={400} style={{ backgroundColor: "#649cb4"}}>
+            <div style={{ textAlign: "right", fontSize: 20, color:"white" }}>
               Ofrecemos cuidado de salud completo, incluyendo medicina
               preventativa, Cuidado de enfermedades crónicas y respuestas
               innovativas a cuidados modernos
@@ -54,61 +59,53 @@ export default function Page() {
             </Button>
           </Card>
           <Image
+            miw={"50%"}
+            maw={"50%"}
             src={
-              "https://cdn.discordapp.com/attachments/758361942972170240/1308090690965737512/B8F07C39-A1FA-4E7A-9109-F09A3FA0D2B8.png?ex=673cade3&is=673b5c63&hm=f3c72cdda4505eee424da0cd3edea0e8dfae48493384cd2f57049869f6076dbc&"
+              "https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             }
             alt="Foto de un estetoscopio"
           />
         </Group>
       </Card>
       <Card>
-        <Grid>
-          <GridCol span={3} />
-          <GridCol span={3}>
+        <Group wrap="nowrap">
+          <Card maw={"50%"}>
             <div style={{ textAlign: "right", fontSize: 20 }}>
               <h3>Nuestro Cuidado</h3>
               <div>
                 AoSame Salud entra cuidado holistico de pies a cabeza,
-                incluyendo cudados de enfermedades crónicas, tratamientos
-                estéticos como ... y tratamientos especialistas como ...
+                incluyendo cuidados de enfermedades crónicas, tratamientos
+                estéticos como acne, cuidado de arrugas y verrugas y tratamientos especialistas como terapia de reemplazo hormonal y PrEP
               </div>
             </div>
-            <br />
-          </GridCol>
-          <GridCol span={6}>
-            <br />
-            <br />
-            <Accordion maw={1000} defaultValue="Apples">
-              {items}
-            </Accordion>
-          </GridCol>
-        </Grid>
+          </Card>
+
+          <Accordion maw={"50%"} defaultValue="Bienestar y prevención">
+            {items}
+          </Accordion>
+        </Group>
       </Card>
 
-      <Card>
-        <Grid>
-          <GridCol span={3} />
-          <GridCol span={3}>
-            <div style={{ textAlign: "right", fontSize: 20 }}>
+      <Card style={{ backgroundColor: "#649cb4"}}>
+        <Group wrap="nowrap">
+          <Card miw={"50%"} maw={"50%"} style={{ backgroundColor: "#649cb4"}}>
+            <div style={{ textAlign: "right", fontSize: 20, color:"white" }} >
               <div>
                 Conviertete en un paciente y mira por que somos diferentes
               </div>
             </div>
-            <br />
-          </GridCol>
-          <GridCol span={6}>
-            <br />
-            <Center>
-              <Button
-                miw={500}
-                component="a"
-                href="https://beta-sacmed.novacaribe.com/ReservaOnline/11541"
-              >
-                Agenda
-              </Button>
-            </Center>
-          </GridCol>
-        </Grid>
+          </Card>
+            <Card miw={"50%"} style={{ backgroundColor: "#649cb4"}}>
+            <Button
+            miw={"100%"}
+              component="a"
+              href="https://beta-sacmed.novacaribe.com/ReservaOnline/11541"
+            >
+              Agenda
+            </Button>
+            </Card>
+        </Group>
       </Card>
     </Stack>
   );
