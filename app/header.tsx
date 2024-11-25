@@ -4,7 +4,6 @@ import classes from "./css/HeaderSimple.module.css";
 import { useState } from "react";
 import { Burger, Container, Group, Image } from "@mantine/core";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 
 const links = [
   { link: "/", label: "Home" },
@@ -34,7 +33,12 @@ export function HeaderSimple() {
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
-        <Image c={"red"} src={"https://cdn.discordapp.com/attachments/743269430062219285/1310736658710401114/Untitled-removebg-preview.png?ex=67464e23&is=6744fca3&hm=6adfd1de22817a94f92815e221197f791bc8412b3174725f44cd43cc38b9b416&"} mah={"100%"} />
+        <Image
+          src={
+            "https://raw.githubusercontent.com/jcobaise/appointments/refs/heads/master/aotransparent%20icon.png"
+          }
+          mah={"100%"}
+        />
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>

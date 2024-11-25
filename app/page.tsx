@@ -45,10 +45,10 @@ export default function Page() {
 
   return (
     <Stack gap={"xl"}>
-      <Card style={{ backgroundColor: "#649cb4"}}>
+      <Card style={{ backgroundColor: "#649cb4" }}>
         <Group wrap="nowrap" gap={"xs"} justify="end">
-          <Card maw={400} style={{ backgroundColor: "#649cb4"}}>
-            <div style={{ textAlign: "right", fontSize: 20, color:"white" }}>
+          <Card maw={400} style={{ backgroundColor: "#649cb4" }}>
+            <div style={{ textAlign: "right", fontSize: 20, color: "white" }}>
               Ofrecemos cuidado de saud completo, incluyendo medicina
               preventativa, Cuidado de enfermedades crónicas y respuestas
               innovativas a cuidados modernos
@@ -76,7 +76,9 @@ export default function Page() {
               <div>
                 AoSame Salud entra cuidado holistico de pies a cabeza,
                 incluyendo cuidados de enfermedades crónicas, tratamientos
-                estéticos como acne, cuidado de arrugas y verrugas y tratamientos especialistas como terapia de reemplazo hormonal y PrEP
+                estéticos como acne, cuidado de arrugas y verrugas y
+                tratamientos especialistas como terapia de reemplazo hormonal y
+                PrEP
               </div>
             </div>
           </Card>
@@ -87,24 +89,24 @@ export default function Page() {
         </Group>
       </Card>
 
-      <Card style={{ backgroundColor: "#649cb4"}}>
+      <Card style={{ backgroundColor: "#649cb4" }}>
         <Group wrap="nowrap">
-          <Card miw={"50%"} maw={"50%"} style={{ backgroundColor: "#649cb4"}}>
-            <div style={{ textAlign: "right", fontSize: 20, color:"white" }} >
+          <Card miw={"50%"} maw={"50%"} style={{ backgroundColor: "#649cb4" }}>
+            <div style={{ textAlign: "right", fontSize: 20, color: "white" }}>
               <div>
                 Conviertete en un paciente y mira por que somos diferentes
               </div>
             </div>
           </Card>
-            <Card miw={"50%"} style={{ backgroundColor: "#649cb4"}}>
+          <Card miw={"50%"} style={{ backgroundColor: "#649cb4" }}>
             <Button
-            miw={"100%"}
+              miw={"100%"}
               component="a"
               href="https://beta-sacmed.novacaribe.com/ReservaOnline/11541"
             >
               Agenda
             </Button>
-            </Card>
+          </Card>
         </Group>
       </Card>
     </Stack>
