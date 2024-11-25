@@ -1,7 +1,13 @@
 "use client";
 
 import { createTheme } from "@mantine/core";
+import { Metadata } from "next";
 
 export const theme = createTheme({
-  /* Put your mantine theme override here */
+
 });
+
+export const metadata: Metadata = {
+  title: "Aosame Salud",
+  description: "Portal principal de Aosame salud",
+};
