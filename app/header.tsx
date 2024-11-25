@@ -35,7 +35,7 @@ export function HeaderSimple() {
       <Container size="md" className={classes.inner}>
         <Image
           src={
-            "https://raw.githubusercontent.com/jcobaise/appointments/refs/heads/master/aotransparent%20icon.png"
+            "https://raw.githubusercontent.com/jcobaise/appointments/refs/heads/master/aotransparenticon.png"
           }
           mah={"100%"}
         />
