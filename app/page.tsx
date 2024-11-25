@@ -23,7 +23,7 @@ export default function Page() {
     {
       value: "Consultas de salud",
       description:
-        "Tratamos con una basta experiencia en el tratamiento de condiciones crónicas además de enfermedades puntuales tan inocentes como un resfriado",
+        "Tratamos con una vasta experiencia en el tratamiento de condiciones crónicas además de enfermedades puntuales tan inocentes como un resfriado",
     },
     {
       value: "Experienca en tratamientos a personas LGBTQIA+ ",
@@ -33,7 +33,7 @@ export default function Page() {
   ];
 
   useEffect(() => {
-    document.title = "Ao Same Salud";
+    document.title = "Aosame Salud";
   }, []);
 
   const items = groceries.map((item) => (
@@ -49,7 +49,7 @@ export default function Page() {
         <Group wrap="nowrap" gap={"xs"} justify="end">
           <Card maw={400} style={{ backgroundColor: "#649cb4"}}>
             <div style={{ textAlign: "right", fontSize: 20, color:"white" }}>
-              Ofrecemos cuidado de salud completo, incluyendo medicina
+              Ofrecemos cuidado de saud completo, incluyendo medicina
               preventativa, Cuidado de enfermedades crónicas y respuestas
               innovativas a cuidados modernos
             </div>
